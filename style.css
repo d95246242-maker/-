@@ -1,0 +1,413 @@
+/* =========================
+   GOOGLE FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.body1,
+.body2 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.8)),
+        url("https://images.unsplash.com/photo-1614728263952-84ea256f9679?q=80&w=1974&auto=format&fit=crop") no-repeat center center fixed;
+
+    background-size: cover;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    box-sizing: border-box;
+
+    position: fixed;
+
+    top: 20px;
+
+    /* left: 50%;
+
+    transform: translateX(-50%); */
+
+    width: 91%;
+
+    justify-self: center;
+
+    max-width: 1200px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding: 18px 30px;
+
+    border-radius: 80px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.35);
+
+    z-index: 1000;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+nav h1 {
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 34px;
+
+    color: #FFFFFF;
+
+    letter-spacing: 2px;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.a1 {
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: 12px 24px;
+
+    border-radius: 40px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.4s ease;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+.a1:hover {
+
+    background: linear-gradient(135deg,
+            #ff7b00,
+            #ffb347);
+
+    color: black;
+
+    transform:
+        translateY(-4px) scale(1.05);
+
+    box-shadow:
+        0 10px 20px rgba(255, 140, 0, 0.4);
+}
+
+/* =========================
+   MAIN TITLE
+========================= */
+
+.h1-main {
+
+    margin: 180px auto 60px;
+
+    width: fit-content;
+
+    max-width: 90%;
+
+    padding: 22px 45px;
+
+    border-radius: 80px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(12px);
+
+    font-size: 42px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+
+    transition: 0.4s;
+}
+
+.h1-main:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   CONTAINERS
+========================= */
+
+.container-main2,
+.container2,
+.div-main,
+.div-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+
+    width: 100%;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.container,
+.mission-content,
+.main-p {
+
+    width: 540px;
+
+    max-width: 100%;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 28px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.45s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.container:hover,
+.mission-content:hover,
+.main-p:hover {
+
+    transform:
+        translateY(-10px) scale(1.02);
+
+    box-shadow:
+        0 15px 40px rgba(255, 140, 0, 0.25);
+
+    border-color:
+        rgba(255, 140, 0, 0.3);
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.container p,
+.main-p,
+.mission-content p,
+.mission-content li {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+/* =========================
+   TITLES
+========================= */
+
+.container h2,
+.mission-content h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #ffbe88;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* =========================
+   LIST
+========================= */
+
+.mission-content ul {
+
+    margin-left: 20px;
+
+    margin-top: 10px;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+.container img,
+.mission-content img {
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+    transition: 0.5s;
+}
+
+/* =========================
+   IMAGE HOVER
+========================= */
+
+.container img:hover,
+.mission-content img:hover {
+
+    transform: scale(1.03);
+
+    filter:
+        brightness(1.05) saturate(1.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    margin-top: 70px;
+
+    padding: 28px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    font-size: 17px;
+
+    box-shadow:
+        0 -10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #120d0d;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: linear-gradient(#ff7b00,
+            #ffb347);
+
+    border-radius: 20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 768px) {
+
+    nav {
+        gap: 14px;
+        padding: 15px;
+    }
+
+    nav h1 {
+        font-size: 26px;
+    }
+
+    .a1 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .h1-main {
+        font-size: 28px;
+        padding: 18px 24px;
+    }
+
+    .container,
+    .mission-content,
+    .main-p {
+        width: 100%;
+    }
+
+    .container img,
+    .mission-content img {
+        height: 220px;
+    }
+
+    .h1-main {
+        margin-top: 300px;
+    }
+}
